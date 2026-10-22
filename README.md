@@ -1,52 +1,44 @@
-# Awesome-LLM-Reinforcement-Learning-RLHF
+<div align="center">
 
-## Top LLM Reinforcement Learning (RLHF) Ecosystem
+<img src="./assets/banner.svg" alt="Awesome LLM Reinforcement Learning & RLHF" width="100%" />
 
+# 🚀 Awesome LLM Reinforcement Learning & RLHF (2026) 🤖
 
+<p align="center">
+  <strong>A curated list of elite SaaS platforms, post-training frameworks, and open-source libraries for LLM Reinforcement Learning from Human Feedback (RLHF), Preference Optimization (DPO, KTO, GRPO), Reward Modeling, and Self-Hosted AI Alignment.</strong>
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF?style=social&color=white" alt="Repo Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF?style=social&color=white" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-*Focused on Human Feedback Collection, Preference Optimization & Self-Hosted Alignment Frameworks*  
+</div>
 
-**Last updated: October 2026**
+---
 
+## 📌 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Alignment Platforms](#-saas--hosted-alignment-platforms)
+- [💻 Open-Source Repositories & Libraries](#-open-source-repositories--libraries)
+- [📈 Star History](#-star-history)
+- [💖 Support & Contributing](#-support--contributing)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **LLM Reinforcement Learning from Human Feedback (RLHF)**. These tools enable organizations to align language models with human preferences—collecting high-quality feedback data, training reward models, and running RL algorithms like PPO and GRPO—transforming base models into helpful, harmless, and honest assistants.
+---
 
-
-
-**Examples** include Scale AI, Surge AI, Labelbox, Snorkel Flow, Appen, and Hugging Face TRL (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-label vendor fees, and retaining full control over the alignment pipeline—ideal for research labs, enterprises with sensitive data, and teams that want to understand every step of the RLHF process. The open-source landscape is anchored by **Hugging Face TRL** (the most mature and widely adopted training library), **OpenRLHF** (the production-grade distributed framework with Ray and vLLM integration), **verl** (ByteDance's HybridFlow framework for reproducing reasoning-model recipes), and **Distilabel** (the synthetic data and AI feedback engine), with **Unsloth** and **Axolotl** providing memory-efficient fine-tuning that often precedes RLHF.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
+## 🌐 Sector Overview & Market Dynamics
 
 The AI data labeling and RLHF alignment sector is estimated at **$2.5B–$4.5B in 2026** (scaling to over **$18B–$57B by the 2030s** at an estimated 20%–25% CAGR), driven by frontier LLM post-training, reasoning models, and agent evaluation demands. Market dynamics are **moderately concentrated at the frontier tier** (where heavyweight leaders like Scale AI and Surge AI dominate multi-hundred-million-dollar lab contracts due to critical high-skill annotator moats), yet **increasingly fragmented across the mid-market and tooling layer** with specialized programmatic labeling, managed workforce boutiques, and open-source self-hosted alignment frameworks challenging vendor lock-in.
 
-## SaaS/Hosted Platforms
+---
+
+## 🏢 SaaS & Hosted Alignment Platforms
 
 | Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Trial Limits | Key Focus & Overview |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,98 +50,99 @@ The AI data labeling and RLHF alignment sector is estimated at **$2.5B–$4.5B i
 | **[Toloka](https://toloka.ai/)** | **~$72M funding** (Backed by Bezos Expeditions; affiliated with Nebius Group) | Pay-as-you-go per completed task (platform fee + automated QA fee + contributor rate starting from fractions of a cent per task; deposit reserved on launch) | Free requester account setup, sandbox validation environments, and developer API testing; task runs require prepaid balance funding. | Global crowd-sourced and domain-expert data platform with 200K+ contributors across 40+ languages for cost-effective RLHF and evaluation at scale. |
 | **[Appen](https://appen.com/)** | **~$120M–$200M market cap** (ASX: APX; ~$230M–$234M revenue) | Custom enterprise service proposals (variable per task/dataset scope; managed services agreements) | No public free tier or software trial for enterprise clients; worker/contributor signups on CrowdGen are 100% free. | Multilingual reach veteran with global crowd annotators spanning hundreds of languages and dialects for cross-cultural alignment, speech, and relevance data. |
 
+---
 
+## 💻 Open-Source Repositories & Libraries
 
-## Open-Source GitHub Projects
+Every major active open-source project for self-hosting alignment pipelines, avoiding per-label vendor lock-in, and retaining full control over RL algorithms (PPO, GRPO, DPO, KTO, ORPO, RLOO).
 
+*Sorted strictly by GitHub Star Count (descending).*
 
+- **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)  
+  ⚡ **The ultra-fast memory-efficient fine-tuning precursor.** Delivers **2–5x speedups and 50–70% memory savings** over naive Hugging Face Trainer. Ideal for SFT and memory-constrained DPO/GRPO before full-scale RLHF runs on consumer or single GPUs (e.g. 7B QLoRA on RTX 4090 uses only 11GB VRAM).
 
-- **[Hugging Face TRL](https://github.com/huggingface/trl)**  
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** [![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white)](https://github.com/hiyouga/LLaMA-Factory/stargazers)  
+  🎛️ **The all-in-one web UI fine-tuning and alignment suite.** Features the interactive LLaMA Board UI with unified support for 100+ LLMs and multi-stage alignment workflows including Supervised Fine-Tuning (SFT), Reward Modeling, DPO, PPO, KTO, and ORPO.
 
-  **The most mature and widely adopted RLHF training library.** 18K+ GitHub stars, 17.5K+ updated weekly . **Ecosystem position**: TRL is the official implementation standard for post-training in the Hugging Face ecosystem, with seamless integration into `transformers`, `accelerate`, and `peft` . **Algorithm coverage**: SFT, DPO, IPO, KTO, GRPO, BCO, and PPO via `PPOTrainer`. **GRPOTrainer** (v0.17.0+) removes the critic model and significantly reduces VRAM, making it the preferred algorithm for reproducing reasoning models like DeepSeek-R1 . **Strengths**: clean `Trainer` APIs, excellent documentation, and the lowest barrier to entry for researchers and educators. **Limitations**: default `generate()` is not system-optimized for large-scale distributed training; single-node efficiency is good but multi-node scaling lags behind OpenRLHF and verl . Best for algorithm researchers, educators, and teams with limited compute (single-node or single-GPU) validating new reward functions or training models under 30B.
+- **[verl (Volcano Engine RL)](https://github.com/volcengine/verl)** [![GitHub stars](https://img.shields.io/github/stars/volcengine/verl?style=social&color=white)](https://github.com/volcengine/verl/stargazers)  
+  🌋 **ByteDance's HybridFlow framework for reasoning models.** The de-facto production framework used by industry researchers to reproduce frontier reasoning recipes like **DeepSeek-R1, DAPO, GSPO, and Qwen-style GRPO**. Engineered for high-throughput multi-node scaling across heterogeneous Ray clusters.
 
+- **[Hugging Face TRL](https://github.com/huggingface/trl)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white)](https://github.com/huggingface/trl/stargazers)  
+  🤗 **The standard post-training library for the Hugging Face ecosystem.** Native integration into `transformers`, `accelerate`, and `peft`. Comprehensive algorithm coverage: SFT, DPO, IPO, KTO, BCO, PPO (`PPOTrainer`), and critic-less `GRPOTrainer` for reasoning model reproduction.
 
+- **[llama-recipes](https://github.com/meta-llama/llama-recipes)** [![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-recipes?style=social&color=white)](https://github.com/meta-llama/llama-recipes/stargazers)  
+  🦙 **Meta's official fine-tuning and alignment repository.** Comprehensive reference recipes for fine-tuning, PEFT/LoRA, DPO, and agentic post-training on Llama 3/3.1/3.2 models using PyTorch FSDP.
 
-- **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)**  
+- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** [![GitHub stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white)](https://github.com/axolotl-ai-cloud/axolotl/stargazers)  
+  ⚙️ **Configuration-driven post-training for community releases.** Production-proven declarative YAML framework supporting DeepSpeed, FSDP, multi-GPU clustering, DPO, IPO, and PPO with reproducible recipe artifacts.
 
-  **The production-grade distributed framework.** 9K+ GitHub stars, updated weekly . **Architecture**: Ray-based distributed computing with **vLLM for inference acceleration** and DeepSpeed ZeRO for memory efficiency. The PPO's four models (Actor, Critic, Reward, Reference) are physically separated onto different GPU resource groups—eliminating the monolithic architecture's shortcomings . **Key innovation**: first framework to integrate vLLM into the RLHF training loop, using PagedAttention and tensor parallelism for multi-fold generation throughput improvement . **Algorithm support**: PPO, DAPO, REINFORCE++, RLOO, and rejection sampling. **Token-level pipeline** supports multi-turn agentic training without distribution shift . **Adoption**: integrated into CMU's Advanced NLP course (Spring 2025), used by Google, ByteDance, Baidu, NVIDIA, Tencent, and UC Berkeley's Starling Team . **Limitations**: language models only (no multimodal support); dependencies on Ray, vLLM, and DeepSpeed introduce upstream compatibility maintenance . Best for production deployments and teams training 70B+ models or running agentic RL at scale.
+- **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** [![GitHub stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white)](https://github.com/OpenRLHF/OpenRLHF/stargazers)  
+  🚀 **Production Ray-based distributed RLHF with vLLM acceleration.** Separates the four RLHF models (Actor, Critic, Reward, Reference) onto dedicated GPU resources, using PagedAttention and tensor parallelism to achieve multi-fold generation throughput for 70B+ models and multi-turn agentic RL.
 
+- **[Alignment Handbook](https://github.com/huggingface/alignment-handbook)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social&color=white)](https://github.com/huggingface/alignment-handbook/stargazers)  
+  📖 **Robust reproducible recipes for full alignment pipelines.** Provides end-to-end scripts and recipes developed by Hugging Face to train models like Zephyr and Starling using SFT, DPO, and reward-modeling best practices.
 
+- **[trlX](https://github.com/CarperAI/trlx)** [![GitHub stars](https://img.shields.io/github/stars/CarperAI/trlx?style=social&color=white)](https://github.com/CarperAI/trlx/stargazers)  
+  🏎️ **CarperAI's distributed RLHF engine.** Designed for reinforcement learning on language models up to 30B+ parameters using PPO and ILQL with support for Accelerate and NVIDIA NeMo backends.
 
-- **[verl (Volcano Engine RL)](https://github.com/volcengine/verl)**  
+- **[align-anything](https://github.com/PKU-Alignment/align-anything)** [![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/align-anything?style=social&color=white)](https://github.com/PKU-Alignment/align-anything/stargazers)  
+  🌐 **All-modality alignment framework (PKU-Alignment).** Unifies alignment for text, visual, and audio modalities across DPO, PPO, and KTO with flexible reward model architectures.
 
-  **ByteDance's HybridFlow framework.** 19K+ GitHub stars, updated weekly . **Positioning**: the de-facto framework people use to **reproduce DeepSeek-R1 and Qwen-style GRPO/DAPO/GSPO recipes** . **Architecture**: HybridFlow design with strong multi-node scaling; powerful but architecturally dense (Ray + multiple backends) . **Learnability**: medium-low—more complex than TRL but more scalable than single-node approaches. Best for teams reproducing frontier reasoning-model recipes and organizations with dedicated infrastructure engineers.
+- **[Open-Instruct](https://github.com/allenai/open-instruct)** [![GitHub stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white)](https://github.com/allenai/open-instruct/stargazers)  
+  🏛️ **Allen Institute for AI (Ai2)'s post-training suite.** Complete academic transparency and code powering the open Tülu series, covering SFT, DPO, and RLHF pipeline stages.
 
+- **[Distilabel](https://github.com/argilla-io/distilabel)** [![GitHub stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social&color=white)](https://github.com/argilla-io/distilabel/stargazers)  
+  ✨ **Synthetic data generation and AI feedback engine.** Generates high-quality preference datasets for DPO/RLHF, implements LLM-as-a-judge pipelines, and integrates with vLLM, OpenAI, and Anthropic.
 
+- **[Alpaca Eval](https://github.com/tatsu-lab/alpaca_eval)** [![GitHub stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_eval?style=social&color=white)](https://github.com/tatsu-lab/alpaca_eval/stargazers)  
+  📊 **Fast, low-cost automated alignment evaluation.** Stanford's benchmark for automated evaluation of instruction-following models against human preference ground truths.
 
-- **[Distilabel](https://github.com/argilla-io/distilabel)**  
+- **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** [![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social&color=white)](https://github.com/PKU-Alignment/safe-rlhf/stargazers)  
+  🛡️ **Constrained RLHF for safe and harmless model tuning.** Decouples human preferences into helpfulness and harmlessness dimensions to train safely aligned assistants without catastrophic forgetting.
 
-  **The synthetic data and AI feedback engine.** The industry standard for creating high-quality datasets for fine-tuning frontier models . **Function**: builds complex pipelines leveraging LLMs to generate, augment, and filter datasets, incorporating "LLM-as-a-judge" patterns for quality assurance . **Key use case**: creating **preference datasets for DPO and RLHF workflows**—generating multiple responses to the same prompt and using a stronger model to rank them . **Strengths**: provider-agnostic (Anthropic, OpenAI, vLLM, Ollama), reliable pipeline logic (retries, rate limiting, caching), and rich component library (UltraFeedback, Evol-Instruct, DEITA) . **Limitations**: generating large datasets via frontier APIs can be expensive; synthetic data inherits generator model biases . Best for teams that need to scale from hundreds to tens of thousands of high-quality training examples before running RLHF.
+- **[NeMo-Aligner](https://github.com/NVIDIA/NeMo-Aligner)** [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=social&color=white)](https://github.com/NVIDIA/NeMo-Aligner/stargazers)  
+  🟢 **NVIDIA's scalable enterprise model alignment toolkit.** Built on Megatron-LM and NeMo for high-efficiency distributed training of massive models using SteerLM, DPO, and PPO on NVIDIA DGX clusters.
 
-
-
-- **[Unsloth](https://github.com/unslothai/unsloth)**  
-
-  **The memory-efficient fine-tuning precursor.** Dominant memory-efficient finetuning library with **2–5x speedups and 50–70% memory savings** versus naive Hugging Face Trainer . **Benchmark**: 7B model QLoRA on RTX 4090 uses 11GB VRAM at 3,400 tokens/sec vs. baseline 18GB at 1,200 tokens/sec . **Role in RLHF**: typically used for the SFT stage or for memory-constrained DPO/GRPO training before full RLHF. **Limitations**: single-GPU focus; multi-GPU support is partial. Best for teams fine-tuning on consumer hardware (24GB or less) who need maximum speed and minimum VRAM.
-
-
-
-- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)**  
-
-  **The production finetuning framework for community releases.** Dominant YAML-config-driven framework with extensive hardware support and every training method (DPO, RLHF, ORPO, KTO) . **Strengths**: multi-GPU via DeepSpeed/FSDP, config-as-artifact for reproducibility. **Trade-offs**: slower than Unsloth on single GPU (1,500 vs. 3,400 tokens/sec) . Best for production-grade training and research where the config is the deliverable.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **LLaMA-Factory** — Broadest feature set with a web UI (LLaMA Board), supporting 100+ models and training methods including DPO, PPO, KTO, ORPO . Best for non-expert users and teams wanting a single tool for training, evaluation, and export.
-
-- **Open-Instruct** — Allen AI's framework for instruction tuning and RLHF. Best for research teams wanting a reference implementation aligned with academic best practices .
-
-- **Frameworks for building custom systems**: Use **TRL + Unsloth** for pedagogical experiments and single-GPU work. Use **OpenRLHF** for production-scale training with vLLM acceleration. Use **verl** to reproduce frontier reasoning-model recipes. Use **Distilabel** to generate preference data before training. Pair **Axolotl** for production SFT/DPO and **LLaMA-Factory** when a web UI is needed.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **Vendor neutrality is now a strategic concern**: Scale AI's Meta investment ($14.3B for 49%) and the subsequent exodus of Google and OpenAI make it a risky choice for labs competing with Meta . Surge AI emerged as the primary neutral alternative.
-
-- **Framework choice depends on scale and expertise**: TRL for learning and small-scale experiments; OpenRLHF for production with vLLM; verl for reproducing frontier recipes. There is no single "best" framework—the right choice depends on your team's infrastructure skills and model size .
-
-- **Data quality dominates algorithm choice**: Distilabel and human feedback vendors address the upstream bottleneck. No RL algorithm can compensate for poor preference data.
-
-- **SaaS RLHF vendors charge premium prices**: Surge AI and Labelbox operate at quality-over-cost economics. Evaluate whether in-house annotation or programmatic labeling (Snorkel) is viable before committing to managed services.
-
-
+- **[Alpaca Farm](https://github.com/tatsu-lab/alpaca_farm)** [![GitHub stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_farm?style=social&color=white)](https://github.com/tatsu-lab/alpaca_farm/stargazers)  
+  🚜 **Simulation framework for human feedback research.** Stanford's testbed for benchmarking RLHF methods (PPO, Expert Iteration, DPO) with low compute barriers and automated simulated annotators.
 
 ---
 
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-LLM-Reinforcement-Learning-RLHF&type=date&legend=top-left)
 
-**Made for ML researchers, alignment engineers, and organizations building aligned language models.**  
+---
 
-Let's make LLM reinforcement learning more open, scalable, and understandable.
+## 💖 Support & Contributing
+
+Contributions are warmly welcome! If you know of an outstanding alignment framework, synthetic data generator, or RLHF tool that should be featured:
+
+1. 🍴 **Fork the repository**
+2. 🌿 **Create a new branch** (`git checkout -b feature/cool-rlhf-tool`)
+3. ✍️ **Add your entry** following the existing sorted format with official links and star badges
+4. 🚀 **Submit a Pull Request** with a concise description of your tool
+
+### Show Your Support ⭐
+
+If you found this curated ecosystem helpful:
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork and share** with fellow alignment engineers and ML researchers.
+- ☕ **Support future curation and development:**
+  
+  [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%99%A5-pink?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated list** — not exhaustive and not a commercial endorsement.
+- **Vendor neutrality is a strategic factor**: Following Scale AI's Meta alignment, independent frontier labs increasingly utilize Surge AI or private self-hosted stacks.
+- **Framework choice depends on scale and requirements**: Use **TRL + Unsloth** for rapid prototyping, pedagogical research, or single-GPU work. Use **OpenRLHF** for production Ray clusters with vLLM acceleration. Use **verl** to reproduce frontier reasoning-model recipes (DeepSeek-R1 / Qwen).
+- **Data quality dominates algorithm selection**: Reward modeling and DPO/PPO cannot compensate for poor, noisy, or hallucinated feedback data. Always pair robust training frameworks with verified preference datasets.
+
+---
+
+<div align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the open-source AI alignment community.</sub>
+</div>
