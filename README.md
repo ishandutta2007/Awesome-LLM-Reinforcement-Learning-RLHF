@@ -56,54 +56,54 @@ The AI data labeling and RLHF alignment sector is estimated at **$2.5B–$4.5B i
 
 Every major active open-source project for self-hosting alignment pipelines, avoiding per-label vendor lock-in, and retaining full control over RL algorithms (PPO, GRPO, DPO, KTO, ORPO, RLOO).
 
-*Sorted strictly by GitHub Star Count (descending).*
+*Sorted strictly by GitHub Stars_Count (descending).*
 
-- **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)  
+- **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub_Stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)  
   ⚡ **The ultra-fast memory-efficient fine-tuning precursor.** Delivers **2–5x speedups and 50–70% memory savings** over naive Hugging Face Trainer. Ideal for SFT and memory-constrained DPO/GRPO before full-scale RLHF runs on consumer or single GPUs (e.g. 7B QLoRA on RTX 4090 uses only 11GB VRAM).
 
-- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** [![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white)](https://github.com/hiyouga/LLaMA-Factory/stargazers)  
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** [![GitHub_Stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white)](https://github.com/hiyouga/LLaMA-Factory/stargazers)  
   🎛️ **The all-in-one web UI fine-tuning and alignment suite.** Features the interactive LLaMA Board UI with unified support for 100+ LLMs and multi-stage alignment workflows including Supervised Fine-Tuning (SFT), Reward Modeling, DPO, PPO, KTO, and ORPO.
 
-- **[verl (Volcano Engine RL)](https://github.com/volcengine/verl)** [![GitHub stars](https://img.shields.io/github/stars/volcengine/verl?style=social&color=white)](https://github.com/volcengine/verl/stargazers)  
+- **[verl (Volcano Engine RL)](https://github.com/volcengine/verl)** [![GitHub_Stars](https://img.shields.io/github/stars/volcengine/verl?style=social&color=white)](https://github.com/volcengine/verl/stargazers)  
   🌋 **ByteDance's HybridFlow framework for reasoning models.** The de-facto production framework used by industry researchers to reproduce frontier reasoning recipes like **DeepSeek-R1, DAPO, GSPO, and Qwen-style GRPO**. Engineered for high-throughput multi-node scaling across heterogeneous Ray clusters.
 
-- **[Hugging Face TRL](https://github.com/huggingface/trl)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white)](https://github.com/huggingface/trl/stargazers)  
+- **[Hugging Face TRL](https://github.com/huggingface/trl)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white)](https://github.com/huggingface/trl/stargazers)  
   🤗 **The standard post-training library for the Hugging Face ecosystem.** Native integration into `transformers`, `accelerate`, and `peft`. Comprehensive algorithm coverage: SFT, DPO, IPO, KTO, BCO, PPO (`PPOTrainer`), and critic-less `GRPOTrainer` for reasoning model reproduction.
 
-- **[llama-recipes](https://github.com/meta-llama/llama-recipes)** [![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-recipes?style=social&color=white)](https://github.com/meta-llama/llama-recipes/stargazers)  
+- **[llama-recipes](https://github.com/meta-llama/llama-recipes)** [![GitHub_Stars](https://img.shields.io/github/stars/meta-llama/llama-recipes?style=social&color=white)](https://github.com/meta-llama/llama-recipes/stargazers)  
   🦙 **Meta's official fine-tuning and alignment repository.** Comprehensive reference recipes for fine-tuning, PEFT/LoRA, DPO, and agentic post-training on Llama 3/3.1/3.2 models using PyTorch FSDP.
 
-- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** [![GitHub stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white)](https://github.com/axolotl-ai-cloud/axolotl/stargazers)  
+- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** [![GitHub_Stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white)](https://github.com/axolotl-ai-cloud/axolotl/stargazers)  
   ⚙️ **Configuration-driven post-training for community releases.** Production-proven declarative YAML framework supporting DeepSpeed, FSDP, multi-GPU clustering, DPO, IPO, and PPO with reproducible recipe artifacts.
 
-- **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** [![GitHub stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white)](https://github.com/OpenRLHF/OpenRLHF/stargazers)  
+- **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white)](https://github.com/OpenRLHF/OpenRLHF/stargazers)  
   🚀 **Production Ray-based distributed RLHF with vLLM acceleration.** Separates the four RLHF models (Actor, Critic, Reward, Reference) onto dedicated GPU resources, using PagedAttention and tensor parallelism to achieve multi-fold generation throughput for 70B+ models and multi-turn agentic RL.
 
-- **[Alignment Handbook](https://github.com/huggingface/alignment-handbook)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social&color=white)](https://github.com/huggingface/alignment-handbook/stargazers)  
+- **[Alignment Handbook](https://github.com/huggingface/alignment-handbook)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social&color=white)](https://github.com/huggingface/alignment-handbook/stargazers)  
   📖 **Robust reproducible recipes for full alignment pipelines.** Provides end-to-end scripts and recipes developed by Hugging Face to train models like Zephyr and Starling using SFT, DPO, and reward-modeling best practices.
 
-- **[trlX](https://github.com/CarperAI/trlx)** [![GitHub stars](https://img.shields.io/github/stars/CarperAI/trlx?style=social&color=white)](https://github.com/CarperAI/trlx/stargazers)  
+- **[trlX](https://github.com/CarperAI/trlx)** [![GitHub_Stars](https://img.shields.io/github/stars/CarperAI/trlx?style=social&color=white)](https://github.com/CarperAI/trlx/stargazers)  
   🏎️ **CarperAI's distributed RLHF engine.** Designed for reinforcement learning on language models up to 30B+ parameters using PPO and ILQL with support for Accelerate and NVIDIA NeMo backends.
 
-- **[align-anything](https://github.com/PKU-Alignment/align-anything)** [![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/align-anything?style=social&color=white)](https://github.com/PKU-Alignment/align-anything/stargazers)  
+- **[align-anything](https://github.com/PKU-Alignment/align-anything)** [![GitHub_Stars](https://img.shields.io/github/stars/PKU-Alignment/align-anything?style=social&color=white)](https://github.com/PKU-Alignment/align-anything/stargazers)  
   🌐 **All-modality alignment framework (PKU-Alignment).** Unifies alignment for text, visual, and audio modalities across DPO, PPO, and KTO with flexible reward model architectures.
 
-- **[Open-Instruct](https://github.com/allenai/open-instruct)** [![GitHub stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white)](https://github.com/allenai/open-instruct/stargazers)  
+- **[Open-Instruct](https://github.com/allenai/open-instruct)** [![GitHub_Stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white)](https://github.com/allenai/open-instruct/stargazers)  
   🏛️ **Allen Institute for AI (Ai2)'s post-training suite.** Complete academic transparency and code powering the open Tülu series, covering SFT, DPO, and RLHF pipeline stages.
 
-- **[Distilabel](https://github.com/argilla-io/distilabel)** [![GitHub stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social&color=white)](https://github.com/argilla-io/distilabel/stargazers)  
+- **[Distilabel](https://github.com/argilla-io/distilabel)** [![GitHub_Stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social&color=white)](https://github.com/argilla-io/distilabel/stargazers)  
   ✨ **Synthetic data generation and AI feedback engine.** Generates high-quality preference datasets for DPO/RLHF, implements LLM-as-a-judge pipelines, and integrates with vLLM, OpenAI, and Anthropic.
 
-- **[Alpaca Eval](https://github.com/tatsu-lab/alpaca_eval)** [![GitHub stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_eval?style=social&color=white)](https://github.com/tatsu-lab/alpaca_eval/stargazers)  
+- **[Alpaca Eval](https://github.com/tatsu-lab/alpaca_eval)** [![GitHub_Stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_eval?style=social&color=white)](https://github.com/tatsu-lab/alpaca_eval/stargazers)  
   📊 **Fast, low-cost automated alignment evaluation.** Stanford's benchmark for automated evaluation of instruction-following models against human preference ground truths.
 
-- **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** [![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social&color=white)](https://github.com/PKU-Alignment/safe-rlhf/stargazers)  
+- **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** [![GitHub_Stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social&color=white)](https://github.com/PKU-Alignment/safe-rlhf/stargazers)  
   🛡️ **Constrained RLHF for safe and harmless model tuning.** Decouples human preferences into helpfulness and harmlessness dimensions to train safely aligned assistants without catastrophic forgetting.
 
-- **[NeMo-Aligner](https://github.com/NVIDIA/NeMo-Aligner)** [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=social&color=white)](https://github.com/NVIDIA/NeMo-Aligner/stargazers)  
+- **[NeMo-Aligner](https://github.com/NVIDIA/NeMo-Aligner)** [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=social&color=white)](https://github.com/NVIDIA/NeMo-Aligner/stargazers)  
   🟢 **NVIDIA's scalable enterprise model alignment toolkit.** Built on Megatron-LM and NeMo for high-efficiency distributed training of massive models using SteerLM, DPO, and PPO on NVIDIA DGX clusters.
 
-- **[Alpaca Farm](https://github.com/tatsu-lab/alpaca_farm)** [![GitHub stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_farm?style=social&color=white)](https://github.com/tatsu-lab/alpaca_farm/stargazers)  
+- **[Alpaca Farm](https://github.com/tatsu-lab/alpaca_farm)** [![GitHub_Stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_farm?style=social&color=white)](https://github.com/tatsu-lab/alpaca_farm/stargazers)  
   🚜 **Simulation framework for human feedback research.** Stanford's testbed for benchmarking RLHF methods (PPO, Expert Iteration, DPO) with low compute barriers and automated simulated annotators.
 
 ---
@@ -120,7 +120,7 @@ Contributions are warmly welcome! If you know of an outstanding alignment framew
 
 1. 🍴 **Fork the repository**
 2. 🌿 **Create a new branch** (`git checkout -b feature/cool-rlhf-tool`)
-3. ✍️ **Add your entry** following the existing sorted format with official links and star badges
+3. ✍️ **Add your entry** following the existing sorted format with official links and Stars_Badges
 4. 🚀 **Submit a Pull Request** with a concise description of your tool
 
 ### Show Your Support ⭐
