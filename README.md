@@ -30,6 +30,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -40,49 +42,21 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The AI data labeling and RLHF alignment sector is estimated at **$2.5B–$4.5B in 2026** (scaling to over **$18B–$57B by the 2030s** at an estimated 20%–25% CAGR), driven by frontier LLM post-training, reasoning models, and agent evaluation demands. Market dynamics are **moderately concentrated at the frontier tier** (where heavyweight leaders like Scale AI and Surge AI dominate multi-hundred-million-dollar lab contracts due to critical high-skill annotator moats), yet **increasingly fragmented across the mid-market and tooling layer** with specialized programmatic labeling, managed workforce boutiques, and open-source self-hosted alignment frameworks challenging vendor lock-in.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[Surge AI](https://www.surge.ai/)**  
-
-  **The RLHF data heavyweight and neutrality beneficiary.** Bootstrapped, low-profile, and reportedly out-earning Scale AI as early as 2024 with a fraction of the headcount . Became the default neutral choice for frontier-lab human feedback and evaluation data after Scale's Meta entanglement. Elite annotator pools, strong on nuanced text and preference data. Premium pricing, with computer vision not the center of gravity. Best for LLM labs buying RLHF, red-teaming, and eval data at quality-over-cost economics.
-
-
-
-- **[Scale AI](https://scale.com/)**  
-
-  **The former default, now a neutrality concern.** Meta invested a reported **$14.3 billion for a 49% stake** in June 2025, and Scale's founder left to lead Meta's superintelligence effort . Within days, Google and OpenAI were reported to be winding down work with the company. For any lab competing with Meta, Scale stopped being a neutral vendor. Still offers annotation, RLHF data, and evaluation services, but the strategic risk is significant. Best for organizations not competing directly with Meta that value Scale's scale and existing integrations.
-
-
-
-- **[Labelbox](https://labelbox.com/)**  
-
-  **The annotation platform pivoting to RL environments.** Now sells four things: **Horizon** (RL environments and preference signal), **Terra** (robotics data), **Alignerr** (2.6M+ knowledge expert network), and **Recursion** (enterprise RL platform for specialist agents) . The classic annotation tool still exists but is no longer the headline product. **Caveat**: the public pricing page is gone, making the platform a moving target with opaque cost . Best for teams wanting an established platform leaning into evals and RL-era data.
-
-
-
-- **[Snorkel Flow](https://snorkel.ai/)**  
-
-  **The programmatic labeling alternative.** Takes a different approach from human-workforce vendors—uses weak supervision and programmatic labeling to generate training data without manual annotation at scale . Best for organizations with domain expertise that want to encode labeling logic rather than pay per label.
-
-
-
-- **[Appen](https://appen.com/)**  
-
-  **The multilingual reach veteran.** One of the industry's oldest names, with a global crowd spanning hundreds of languages and dialects. After difficult years, refocused on LLM data services and remains hard to beat when a dataset needs authentic coverage across dozens of locales, especially in speech and search relevance . Best for multilingual text, speech, and relevance data at serious breadth.
-
-
-
-- **[Toloka](https://toloka.ai/)**  
-
-  Global crowd-sourced data platform with expertise in RLHF, evaluation, and multilingual data collection. Best for organizations needing cost-effective human feedback at scale across diverse geographies.
-
-
-
-- **[iMerit](https://imerit.net/)**  
-
-  Veteran managed-services provider with deep benches in computer vision, geospatial, medical, and autonomous-vehicle data, plus its own Ango Hub platform. Full-time trained annotators rather than crowds . Best for long-running, high-volume CV and AV programs needing process maturity.
+| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Trial Limits | Key Focus & Overview |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Scale AI](https://scale.com/)** | **~$29B valuation** (~$2B ARR in 2025; Meta 49% stake at $14.3B) | Starting at ~$0.05/labeling unit (Rapid/Data Engine self-serve); Enterprise contracts scale from $50,000+ | Free tier for Scale Nucleus dataset management (individual/academic use; capped data rows & model zoo queries); Rapid tier historically includes 200–1,000 free starter labeling units. | Enterprise annotation, RLHF data, and evaluation services. Strategic neutrality risk following Meta's 49% acquisition. |
+| **[Surge AI](https://www.surge.ai/)** | **~$15B–$25B valuation** (~$1.2B–$1.4B ARR; bootstrapped until 2025) | Custom enterprise quotes only (typically tailored for engagements exceeding $50K–$100K; dynamic pricing based on domain expertise and SLAs) | No free tier or public self-serve trial; enterprise sales-gated evaluation pilots only. | The RLHF data heavyweight and neutral choice for frontier labs (OpenAI, Anthropic, Google); elite annotator pools specializing in complex reasoning, coding, and alignment. |
+| **[Snorkel Flow](https://snorkel.ai/)** | **~$3.5B valuation** (~$375M ARR; Series E Sep 2026) | Starting at ~$50,000–$60,000/year (AWS Marketplace base enterprise software license / application unit) | No self-serve free forever tier; sales-provisioned enterprise POCs / private trial sandboxes upon request. | Programmatic data labeling and weak supervision platform; provides Data-as-a-Service and agentic RL environments to encode labeling rules without paying per human label. |
+| **[Labelbox](https://labelbox.com/)** | **~$1.3B valuation** (Profitable; Series E) | Free tier available; Starter / Pay-as-you-go starts at **$0.10 per Labelbox Unit (LBU)**; Custom enterprise commitments for Horizon/Alignerr | **500 free LBUs/month** forever (up to 30 users, 50 projects, 25 ontologies, and 1,500 API req/min; no new imports once monthly LBUs expire). | Annotation platform expanding into RL environments (Horizon), specialist agent evals (Recursion), and human expert networks (Alignerr). |
+| **[iMerit](https://imerit.net/)** | **Up to $310M acquisition valuation** (Acquired by EXL in 2026; $50M+ revenue) | Free trial available; Ango Hub enterprise software and managed workforce services scale by quote | **Unlimited-time free tier** on Ango Hub (full annotation features unlocked for evaluation; enterprise workforce/on-prem deployments require paid licensing). | Managed services provider with full-time annotator workforces; deep expertise in computer vision, medical, AV, and RLHF alongside its Ango Hub platform. |
+| **[Toloka](https://toloka.ai/)** | **~$72M funding** (Backed by Bezos Expeditions; affiliated with Nebius Group) | Pay-as-you-go per completed task (platform fee + automated QA fee + contributor rate starting from fractions of a cent per task; deposit reserved on launch) | Free requester account setup, sandbox validation environments, and developer API testing; task runs require prepaid balance funding. | Global crowd-sourced and domain-expert data platform with 200K+ contributors across 40+ languages for cost-effective RLHF and evaluation at scale. |
+| **[Appen](https://appen.com/)** | **~$120M–$200M market cap** (ASX: APX; ~$230M–$234M revenue) | Custom enterprise service proposals (variable per task/dataset scope; managed services agreements) | No public free tier or software trial for enterprise clients; worker/contributor signups on CrowdGen are 100% free. | Multilingual reach veteran with global crowd annotators spanning hundreds of languages and dialects for cross-cultural alignment, speech, and relevance data. |
 
 
 
