@@ -56,7 +56,7 @@ The AI data labeling and RLHF alignment sector is estimated at **$2.5B–$4.5B i
 
 Every major active open-source project for self-hosting alignment pipelines, avoiding per-label vendor lock-in, and retaining full control over RL algorithms (PPO, GRPO, DPO, KTO, ORPO, RLOO).
 
-*Sorted strictly by GitHub Stars_Count (descending).*
+*Sorted strictly by GitHub_Stars_Count (descending).*
 
 - **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub_Stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)  
   ⚡ **The ultra-fast memory-efficient fine-tuning precursor.** Delivers **2–5x speedups and 50–70% memory savings** over naive Hugging Face Trainer. Ideal for SFT and memory-constrained DPO/GRPO before full-scale RLHF runs on consumer or single GPUs (e.g. 7B QLoRA on RTX 4090 uses only 11GB VRAM).
